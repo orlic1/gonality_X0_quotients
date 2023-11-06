@@ -1,0 +1,34 @@
+NotTrigonal := function(X,p)
+	C2:=ChangeRing(X,GF(p));
+	FF := FunctionField(C2);
+	AFF := AlgorithmicFunctionField(FF);
+	pls1:=Places(AFF,1);
+	pls2:=Places(AFF,2);
+
+	s:={};
+
+	// 1+1+1
+	for i:=1 to #pls1 do
+	for j:=i to #pls1 do
+	for k:=j to #pls1 do
+	s:=s  join {Dimension(RiemannRochSpace(pls1[i]+pls1[j]+pls1[k]))};
+	end for;
+	end for;
+	end for;
+
+	// 1+2
+	s:={};
+	for i:=1 to #pls1 do
+	for j:=1 to #pls2 do
+	s:=s  join {Dimension(RiemannRochSpace(pls1[i]+pls2[j]))};
+	end for;
+	end for;
+
+	assert s eq {1};
+
+	return 1;
+end function;
+
+// Example: X=X_0(70)^+, p=11
+//X:=X0NQuotient(70,[70]);
+//NotTrigonal(X,11);
