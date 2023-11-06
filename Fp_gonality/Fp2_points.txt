@@ -1,0 +1,12 @@
+Fp2Points := function(X,p)
+	C2:=ChangeRing(X,GF(p));
+	FF := FunctionField(C2);
+	AFF := AlgorithmicFunctionField(FF);
+	pls1:=Places(AFF,1);
+	pls2:=Places(AFF,2);
+	return #pls1+2*#pls2;
+end function;
+
+// Example: X=X_0(268)^+, p=3
+//X:=X0NQuotient(268,[268]);
+//Fp2Points(X,3);
