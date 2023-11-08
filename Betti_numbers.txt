@@ -1,0 +1,10 @@
+betti := function(X)
+A:=QuotientModule(DefiningIdeal(X));
+BettiNumber(A,2,4);
+BettiTable(A);
+return 1;
+end function;
+
+// Example: X=X_0(231)^+
+//X:=X0NQuotient(231,[231]);
+//betti(X);
