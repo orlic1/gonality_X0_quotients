@@ -1,10 +1,11 @@
 betti := function(X)
 A:=QuotientModule(DefiningIdeal(X));
-BettiNumber(A,2,4);
 BettiTable(A);
-return 1;
+return BettiNumber(A,2,4);
 end function;
 
-// Example: X=X_0(231)^+
-//X:=X0NQuotient(231,[231]);
-//betti(X);
+for i in {130,132,150,154,170,172,178,187,189,196,201,217,219,225,231,233,242,243,245,247,256,259,275,283,289,293,335,341,361,383,419,431,479} do
+  i;
+  X:=X0NQuotient(i,[i]);
+  betti(X);
+end for;
