@@ -29,6 +29,29 @@ NotTrigonal := function(X,p)
 	return 1;
 end function;
 
-// Example: X=X_0(70)^+, p=11
-//X:=X0NQuotient(70,[70]);
-//NotTrigonal(X,11);
+X:=X0NQuotient(70,[70]);
+NotTrigonal(X,11);
+
+X:=X0NQuotient(82,[82]);
+NotTrigonal(X,3);
+
+X:=X0NQuotient(90,[90]);
+NotTrigonal(X,11);
+
+X:=X0NQuotient(108,[108]);
+NotTrigonal(X,5);
+
+X:=X0NQuotient(117,[117]);
+NotTrigonal(X,7);
+
+X:=X0NQuotient(161,[161]);
+NotTrigonal(X,2);
+
+X:=X0NQuotient(173,[173]);
+NotTrigonal(X,5);
+
+X:=X0NQuotient(199,[199]);
+NotTrigonal(X,5);
+
+X:=X0NQuotient(311,[311]);
+NotTrigonal(X,2);
