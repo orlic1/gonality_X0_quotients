@@ -53,5 +53,8 @@ NotTrigonal(X,5);
 X:=X0NQuotient(199,[199]);
 NotTrigonal(X,5);
 
+X:=X0NQuotient(251,[251]);
+NotTrigonal(X,2);
+
 X:=X0NQuotient(311,[311]);
 NotTrigonal(X,2);
