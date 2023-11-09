@@ -1,0 +1,5 @@
+for i in {84,88,93,115,116,129,135,137,147,155,159,215} do
+  i;
+  X:=X0NQuotient(i,[i]);
+  Genus4GonalMap(X);
+end for;
