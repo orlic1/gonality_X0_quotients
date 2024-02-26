@@ -143,7 +143,7 @@ X:=X0NQuotient(235,[235]);
 NotTetragonal(X,2);
 
 X:=X0NQuotient(237,[237]);
-NotTetragonal(X,3);
+NotTetragonal(X,2);
 
 X:=X0NQuotient(240,[240]);
 NotTetragonal(X,7);
