@@ -107,7 +107,7 @@ X:=X0NQuotient(216,[216]);
 NotTetragonal(X,5);
 
 X:=X0NQuotient(217,[217]);
-NotTetragonal(X,3);
+NotTetragonal(X,2);
 
 X:=X0NQuotient(218,[218]);
 NotTetragonal(X,3);
@@ -222,3 +222,11 @@ NotTetragonal(X,2);
 
 X:=X0NQuotient(383,[383]);
 NotTetragonal(X,2);
+
+// Now we prove Proposition 3.6
+
+X:=X0NQuotient(246,[3,246]);
+NotTetragonal(X,5);
+
+X:=X0NQuotient(264,[3,264]);
+NotTetragonal(X,5);
