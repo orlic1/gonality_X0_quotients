@@ -4,6 +4,23 @@ BettiTable(A);
 return BettiNumber(A,2,4);
 end function;
 
+load "new_models.m";
+for i:=30 to 806 do
+      // we can skip these levels because the index of Gamma_0(i) is too large (Theorem 3.13)
+    	if i ge 600 and i mod 2 eq 0 then 
+          continue;
+      end if;
+	    if i ge 420 and i mod 6 eq 0 then 
+          continue; 
+      end if;
+	    if i eq 330 or i eq 390 then 
+          continue; 
+      end if;
+
+      g:=genus_quo(i,[i]);
+			if g ge 5 and g le 9 then i,g; end if;
+end for;
+
 for i in {130,132,150,154,170,172,178,187,189,196,201,217,219,225,231,233,242,243,245,247,256,259,275,283,289,293,335,341,361,383,419,431,479} do
   i;
   X:=X0NQuotient(i,[i]);
