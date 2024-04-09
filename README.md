@@ -1,4 +1,4 @@
-The Magma codes from the papers "Tetragonal modular quotients X_0^+(N)" and "Tetragonal modular quotients X_0^+d(N)" by P. Orlić.
+The Magma codes from the papers "Tetragonal modular quotients $X_0^+(N)$" and "Tetragonal modular quotients X_0^+d(N)" by P. Orlić.
 
 new_models.m and quotient_model.m contain auxiliary functions. The most important one there is quotient_model, which gives models for Atkin-Lehner quotients of X_0(N).
 
