@@ -14,4 +14,4 @@ Betti_numbers.txt contains codes for Corollary 3.19. and Proposition 3.21 of the
 
 Gonal_maps.txt constructs degree 3 rational maps from curves X_0^+(N) and X_0^+d(N) of genus 4 and degree 4 rational maps from curves X_0^+(N) of genus 6. All constructions use Magma functions Genus4GonalMap() and Genus6GonalMap().
 
-The files from the folder Sutherland-GL2 were retrieved from the repository https://github.com/AndrewVSutherland/ell-adic-galois-images by Jeremy Rouse, Andrew V. Sutherland, and David Zureick-Brown. 
+The files gl2.m, gl2.sig, and gl2data.m from the folder Sutherland-GL2 were retrieved from the repository https://github.com/AndrewVSutherland/ell-adic-galois-images by Jeremy Rouse, Andrew V. Sutherland, and David Zureick-Brown. They were used in the file Fp2_point_count_420.txt to solve Proposition 3.3 of the paper "Tetragonal modular quotients X_0^+d(N)".
