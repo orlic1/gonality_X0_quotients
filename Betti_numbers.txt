@@ -6,7 +6,7 @@ end function;
 
 load "new_models.m";
 for i:=30 to 806 do
-      // we can skip these levels because the index of Gamma_0(i) is too large (Theorem 3.13)
+      // we can skip these levels because the index of Gamma_0(i) is too large
     	if i ge 600 and i mod 2 eq 0 then 
           continue;
       end if;
@@ -24,5 +24,32 @@ end for;
 for i in {130,132,150,154,170,172,178,187,189,196,201,217,219,225,231,233,242,243,245,247,256,259,275,283,289,293,335,341,361,383,419,431,479} do
   i;
   X:=X0NQuotient(i,[i]);
+  betti(X);
+end for;
+
+
+for i:=30 to 806 do
+      // we can skip these levels because the index of Gamma_0(i) is too large
+    	if i ge 600 and i mod 2 eq 0 then 
+          continue;
+      end if;
+	if i ge 420 and i mod 6 eq 0 then 
+          continue; 
+      end if;
+	if i eq 330 or i eq 390 then 
+          continue; 
+      end if;
+
+      for j:=2 to i-1 do
+	   if i mod j eq 0 and Gcd(j,i div j) eq 1 then
+     		g:=genus_quo(i,[j]);
+		if g ge 5 and g le 9 then i,j,g; end if;
+	   end if;
+      end for;
+end for;
+
+for pairs in {[102,6],[102,34],[114,6],[114,57],[120,3],[130,5],[140,20],[148,37],[152,8],[152,19],[154,7],[154,77],[160,5],[162,2],[162,81],[164,4],[172,43],[174,87],[175,7],[175,25],[178,89],[183,3],[196,49],[202,101],[203,7]} do
+  pairs;
+  X:=X0NQuotient(pairs[1],[pairs[2]]);
   betti(X);
 end for;
