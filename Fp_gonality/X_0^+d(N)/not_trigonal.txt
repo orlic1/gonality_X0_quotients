@@ -1,0 +1,98 @@
+NotTrigonal := function(X,p)
+	C2:=ChangeRing(X,GF(p));
+	FF := FunctionField(C2);
+	AFF := AlgorithmicFunctionField(FF);
+	pls1:=Places(AFF,1);
+	pls2:=Places(AFF,2);
+
+	s:={};
+
+	// 1+1+1
+	for i:=1 to #pls1 do
+	for j:=i to #pls1 do
+	for k:=j to #pls1 do
+	s:=s  join {Dimension(RiemannRochSpace(pls1[i]+pls1[j]+pls1[k]))};
+	end for;
+	end for;
+	end for;
+
+	// 1+2
+	s:={};
+	for i:=1 to #pls1 do
+	for j:=1 to #pls2 do
+	s:=s  join {Dimension(RiemannRochSpace(pls1[i]+pls2[j]))};
+	end for;
+	end for;
+
+	assert s eq {1};
+
+	return 1;
+end function;
+
+X:=X0NQuotient(60,[3]);
+NotTrigonal(X,7);
+
+X:=X0NQuotient(60,[5]);
+NotTrigonal(X,7);
+
+X:=X0NQuotient(66,[2]);
+NotTrigonal(X,13);
+
+X:=X0NQuotient(68,[17]);
+NotTrigonal(X,3);
+
+X:=X0NQuotient(70,[5]);
+NotTrigonal(X,17);
+
+X:=X0NQuotient(74,[2]);
+NotTrigonal(X,3);
+
+X:=X0NQuotient(76,[4]);
+NotTrigonal(X,5);
+
+X:=X0NQuotient(77,[11]);
+NotTrigonal(X,3);
+
+X:=X0NQuotient(80,[5]);
+NotTrigonal(X,7);
+
+X:=X0NQuotient(82,[2]);
+NotTrigonal(X,7);
+
+X:=X0NQuotient(85,[5]);
+NotTrigonal(X,23);
+
+X:=X0NQuotient(85,[17]);
+NotTrigonal(X,7);
+
+X:=X0NQuotient(88,[8]);
+NotTrigonal(X,5);
+
+X:=X0NQuotient(91,[7]);
+NotTrigonal(X,11);
+
+X:=X0NQuotient(93,[3]);
+NotTrigonal(X,7);
+
+X:=X0NQuotient(98,[2]);
+NotTrigonal(X,11);
+
+X:=X0NQuotient(100,[25]);
+NotTrigonal(X,3);
+
+X:=X0NQuotient(108,[27]);
+NotTrigonal(X,5);
+
+X:=X0NQuotient(110,[55]);
+NotTrigonal(X,7);
+
+X:=X0NQuotient(133,[19]);
+NotTrigonal(X,5);
+
+X:=X0NQuotient(145,[29]);
+NotTrigonal(X,11);
+X:=X0NQuotient(177,[59]);
+NotTrigonal(X,5);
+
+X:=X0NQuotient(188,[47]);
+NotTrigonal(X,3);
