@@ -10,7 +10,7 @@ Fp_gonality folder contains codes that give lower bounds on Q-gonality by boundi
 In the folder X_0^+(N) are the codes for the paper "Tetragonal modular quotients $X_0^+(N)$". Fp2_points.txt contains codes for Proposition 3.3, not_trigonal.txt and not_tetragonal.txt contain codes for Propositions 3.4. and 3.6.
 In the folder X_0^+d(N) are the codes for the paper "Tetragonal modular quotients $X_0^{+d}(N)$". magma_420.txt contains the code for Proposition 3.3, not_trigonal.txt and not_tetragonal.txt contain codes for Propositions 3.5 and 3.6, and not_tetragonal_quotient.txt contains codes for Proposition 3.7.
 
-Betti_numbers.txt contains codes for Corollary 3.19. and Proposition 3.21 of the paper "Tetragonal modular quotients $X_0^+(N)$" and codes for Corollary 6.7 of the paper "Tetragonal modular quotients $X_0^+d(N)$".
+Betti_numbers.txt contains codes for Corollary 3.19. and Proposition 3.21 of the paper "Tetragonal modular quotients $X_0^+(N)$" and codes for Corollary 6.7 of the paper "Tetragonal modular quotients $X_0^{+d}(N)$".
 
 Gonal_maps.txt constructs degree $3$ rational maps to $\mathbb{P}^1$ from curves $X_0^+(N)$ and $X_0^{+d}(N)$ of genus $4$ and degree $4$ rational maps to $\mathbb{P}^1$ from curves $X_0^+(N)$ of genus $6$. All constructions use Magma functions Genus4GonalMap() and Genus6GonalMap().
 
