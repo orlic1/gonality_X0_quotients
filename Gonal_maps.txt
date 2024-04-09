@@ -10,3 +10,7 @@ for i in {136,152,163,183,197,203,211,223,269,359} do
   Genus6GonalMap(X);
 end for;
 
+for pairs in {[66,33],[74,37],[86,43],[108,4],[112,7]} do
+  X:=X0NQuotient(pairs[1],[pairs[2]]);
+  Genus4GonalMap(X);
+end for;
