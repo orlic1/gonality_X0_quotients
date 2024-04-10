@@ -4,6 +4,8 @@ BettiTable(A);
 return BettiNumber(A,2,4);
 end function;
 
+// first we compute the Betti numbers for curves X_0^+(N)
+
 load "new_models.m";
 for i:=30 to 806 do
       // we can skip these levels because the index of Gamma_0(i) is too large
@@ -27,6 +29,7 @@ for i in {130,132,150,154,170,172,178,187,189,196,201,217,219,225,231,233,242,24
   betti(X);
 end for;
 
+// now we compute the Betti numbers for curves X_0^+d(N)
 
 for i:=30 to 806 do
       // we can skip these levels because the index of Gamma_0(i) is too large
@@ -48,8 +51,16 @@ for i:=30 to 806 do
       end for;
 end for;
 
-for pairs in {[102,6],[102,34],[114,6],[114,57],[120,3],[130,5],[140,20],[148,37],[152,8],[152,19],[154,7],[154,77],[160,5],[162,2],[162,81],[164,4],[172,43],[174,87],[175,7],[175,25],[178,89],[183,3],[196,49],[202,101],[203,7]} do
+for pairs in {[102,6],[102,34],[114,57],[120,3],[140,20],[148,37],[152,8],[152,19],[154,77],[160,5],[162,2],[162,81],[164,4],[172,43],[174,87],[175,7],[175,25],[178,89],[185,37],[187,17],[196,49],[202,101],[238,119],[245,49],[248,31],[249,83],[262,131],[295,59]} do
   pairs;
   X:=X0NQuotient(pairs[1],[pairs[2]]);
+  betti(X);
+end for;
+
+// For some curves quotient_model computes Betti numbers faster (~10 minutes instead of hours)
+load "quotient_model.m";
+for pairs in {[114,6],[130,5],[154,7],[183,3],[185,5],[187,11],[203,7],[214,107],[225,9],[267,89]} do
+  pairs;
+  X:=quotient_model(pairs[1],[pairs[2]]);
   betti(X);
 end for;
