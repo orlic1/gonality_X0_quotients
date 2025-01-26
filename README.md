@@ -54,4 +54,6 @@ SearchPts(X,20);
 
 ## Imported files
 
-The files gl2.m, gl2.sig, and gl2data.m from the folder Sutherland-GL2 were retrieved from the repository https://github.com/AndrewVSutherland/ell-adic-galois-images by Jeremy Rouse, Andrew V. Sutherland, and David Zureick-Brown. They were used in the file Fp2_point_count_420.txt to solve Proposition 3.3 of the paper "Tetragonal modular quotients $X_0^{+d}(N)$".
+The files gl2.m, gl2.sig, and gl2data.m from the folder Sutherland-GL2 were retrieved from the repository https://github.com/AndrewVSutherland/ell-adic-galois-images by Jeremy Rouse, Andrew V. Sutherland, and David Zureick-Brown.
+
+The file funcions.m was retrieved from the repository https://github.com/FrancescBars/Magma-functions-on-Quotient-Modular-Curves by Francesc Bars.
