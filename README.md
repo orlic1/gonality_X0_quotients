@@ -49,7 +49,7 @@ SearchPts(X,20);
 - Riemann-Roch_search folder contains codes that find rational functions of degree $4$. Each file is a code for one curve. The codes for the curves $X_0^+(N)$ are in the files magma_N.txt and the codes for the curves $X_0^{+d}(N)$ are in the files magma_N-d.txt.
 
 - Fp_gonality folder contains codes that give lower bounds on $\mathbb{Q}$-gonality by bounding the $\mathbb{F}_p$-gonality, separated into folders X_0^+(N) and X_0^+d(N). The methods used there are either
-- - counting the number of $\mathbb{F}_{p^2}$ points and concluding it is too large (greater than $d(p^2+1)$), or
+  - counting the number of $\mathbb{F}_{p^2}$ points and concluding it is too large (greater than $d(p^2+1)$), or
   - proving that all $\mathbb{F}_p$-rational divisors $D\geq0$ of degree $d$ have Riemann-Roch dimension $1$.
 
 ## Imported files
