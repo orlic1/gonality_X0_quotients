@@ -13,7 +13,7 @@ load "quotient_model.m";
 quotient_model(144,[9,16]);
 ```
 
-- Betti_numbers.txt contains codes for Corollary 3.19. and Proposition 3.21 of the paper "Tetragonal modular quotients $X_0^+(N)$" and codes for Corollary 6.7 of the paper "Tetragonal modular quotients $X_0^{+d}(N)$". We prove or disprove the existence of a degree $4$ morphism to $\mathbb{P}^1$ by computing $\beta_{2,2}$.
+- Betti_numbers.txt contains codes that prove or disprove the existence of a degree $4$ morphism to $\mathbb{P}^1$ by computing $\beta_{2,2}$.
 
   Inside that file is also the computation that finds all curves $X_0^{+d}(N)$ with $d<N<807$ of genus $5\leq g\leq9$. It is explained in the paper why we only need to compute the Betti number of these curves.
 
@@ -48,9 +48,9 @@ SearchPts(X,20);
 
 - Riemann-Roch_search folder contains codes that find rational functions of degree $4$. Each file is a code for one curve. The codes for the curves $X_0^+(N)$ are in the files magma_N.txt and the codes for the curves $X_0^{+d}(N)$ are in the files magma_N-d.txt.
 
-- Fp_gonality folder contains codes that give lower bounds on $\mathbb{Q}$-gonality by bounding the Fp-gonality, separated into folders X_0^+(N) and X_0^+d(N).
-In the folder X_0^+(N) are the codes for the paper "Tetragonal modular quotients $X_0^+(N)$". Fp2_points.txt contains codes for Proposition 3.3, not_trigonal.txt and not_tetragonal.txt contain codes for Propositions 3.4. and 3.6.
-In the folder X_0^+d(N) are the codes for the paper "Tetragonal modular quotients $X_0^{+d}(N)$". magma_420.txt contains the code for Proposition 3.3, not_trigonal.txt and not_tetragonal.txt contain codes for Propositions 3.5 and 3.6, and not_tetragonal_quotient.txt contains codes for Proposition 3.7.
+- Fp_gonality folder contains codes that give lower bounds on $\mathbb{Q}$-gonality by bounding the $\mathbb{F}_p$-gonality, separated into folders X_0^+(N) and X_0^+d(N). The methods used there are either
+- - counting the number of $\mathbb{F}_{p^2}$ points and concluding it is too large (greater than $d(p^2+1)$), or
+  - proving that all $\mathbb{F}_p$-rational divisors $D\geq0$ of degree $d$ have Riemann-Roch dimension $1$.
 
 ## Imported files
 
