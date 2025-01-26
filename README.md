@@ -33,7 +33,7 @@ We explicitly find a degree $3$ rational map from $X_0^{+33}(66)$ to $\mathbb{P}
 ```magma
 X:=X0NQuotient(66,[33]);
 assert Genus(X) eq 4;
-Genus4GonalMap(X);  // Returns a map from $X$ to $\mathbb{P}^1$. It is easy to check that it is defined over $\Q$.
+Genus4GonalMap(X);  // Returns a map from $X$ to $\mathbb{P}^1$. It is easy to visually check that it is defined over $\Q$.
 ```
 
 - QuadPts.txt is an auxiliary file that was used to search for quadratic points via intersections with hyperplanes. These quadratic points were then used in codes in the folder Riemann-Roch_search to find degree $4$ rational functions.
