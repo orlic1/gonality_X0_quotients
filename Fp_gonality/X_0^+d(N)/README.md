@@ -6,7 +6,7 @@ These files contain functions used to give lower bounds on $\mathbb{Q}$-gonality
   - We find all places of degree $1$ and $2$ on a curve $X/{\mathbb{F}_p}$.
   - For all ${\mathbb{F}_p}$-rational divisors $D\geq0$ of the form $1+1+1$ (sum of $3$ degree $1$ places) or $1+2$ (sum of places of degree $1$ and $2$) we compute $\ell(D)=1$.
 
-  The curve $X/\mathbb{Q}$ is required to have a rational point and it must have good reduction at $p$.
+  For this algorithm to give a correct proof, the curve $X/\mathbb{Q}$ is required to have a rational point and it must have good reduction at $p$. This is explained in the paper.
 
 - not_tetragonal.txt and not-tetragonal_quotient.txt contain a similar function NotTetragonal(X,p). These two files are split because they present two different methods of proving that the curve $X_0^{+d}(N)$ is not $\mathbb{Q}$-tetragonal.
 
