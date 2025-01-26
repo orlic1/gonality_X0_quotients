@@ -15,6 +15,8 @@ quotient_model(144,[9,16]);
 
 - Betti_numbers.txt contains codes for Corollary 3.19. and Proposition 3.21 of the paper "Tetragonal modular quotients $X_0^+(N)$" and codes for Corollary 6.7 of the paper "Tetragonal modular quotients $X_0^{+d}(N)$". We prove or disprove the existence of a degree $4$ morphism to $\mathbb{P}^1$ by computing $\beta_{2,2}$.
 
+  Inside that file is also the computation that finds all curves $X_0^{+d}(N)$ with $d<N<807$ of genus $5\leq g\leq9$. It is explained in the paper why we only need to compute the Betti number of these curves.
+
 ### Example
 For a curve $X_0^{+6}(102)$ we compute $\beta_{2,2}=0$, implying that this curve is not tetragonal. 
 ```magma
