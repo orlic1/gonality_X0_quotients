@@ -46,7 +46,7 @@ SearchPts(X,20);
 
 - Riemann-Roch_search folder contains codes that find rational functions of degree $4$. Each file is a code for one curve. The codes for the curves $X_0^+(N)$ are in the files magma_N.txt and the codes for the curves $X_0^{+d}(N)$ are in the files magma_N-d.txt.
 
-- Fp_gonality folder contains codes that give lower bounds on Q-gonality by bounding the Fp-gonality, separated into folders X_0^+(N) and X_0^+d(N).
+- Fp_gonality folder contains codes that give lower bounds on $\mathbb{Q}$-gonality by bounding the Fp-gonality, separated into folders X_0^+(N) and X_0^+d(N).
 In the folder X_0^+(N) are the codes for the paper "Tetragonal modular quotients $X_0^+(N)$". Fp2_points.txt contains codes for Proposition 3.3, not_trigonal.txt and not_tetragonal.txt contain codes for Propositions 3.4. and 3.6.
 In the folder X_0^+d(N) are the codes for the paper "Tetragonal modular quotients $X_0^{+d}(N)$". magma_420.txt contains the code for Proposition 3.3, not_trigonal.txt and not_tetragonal.txt contain codes for Propositions 3.5 and 3.6, and not_tetragonal_quotient.txt contains codes for Proposition 3.7.
 
