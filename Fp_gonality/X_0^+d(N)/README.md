@@ -10,9 +10,9 @@ These files contain functions used to give lower bounds on $\mathbb{Q}$-gonality
 
 - not_tetragonal.txt and not-tetragonal_quotient.txt contain a similar function NotTetragonal(X,p). These two files are split because they present two different methods of proving that the curve $X_0^{+d}(N)$ is not $\mathbb{Q}$-tetragonal.
 
-In not_tetragonal_quotient.txt we prove that the lower genus quotient curve $X_0(N)/\left<w_d,w_{d'}\right>$ is not $\mathbb{Q}$-tetragonal, therefore $X_0^{+d}(N)$ is not $\mathbb{Q}$-tetragonal. We do this because $X_0^{+d}(N)$ has high genus and computations with it exceed computer time and memory limits.
+  - In not_tetragonal_quotient.txt we prove that the lower genus quotient curve $X_0(N)/\left<w_d,w_{d'}\right>$ is not $\mathbb{Q}$-tetragonal, therefore $X_0^{+d}(N)$ is not $\mathbb{Q}$-tetragonal. We do this because $X_0^{+d}(N)$ has high genus and computations with it exceed computer time and memory limits.
 
-In not_tetragonal.txt this computation is done directly for the curve $X_0^{+d}(N)$.
+  - In not_tetragonal.txt this computation is done directly for the curve $X_0^{+d}(N)$.
 
 ## Example
 ```magma
