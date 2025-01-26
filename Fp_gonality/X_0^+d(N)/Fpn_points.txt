@@ -1,7 +1,7 @@
 load "funcions.m";
 
 // This function computes the number of F_{p^n}-points on the curve X_0^{+d}(N)
-// Some of the code was taken from an example at Francesc Bars's Github repository https://github.com/FrancescBars/Magma-functions-on-Quotient-Modular-Curves/blob/main
+// Some of the code was taken from an example at Francesc Bars's Github repository https://github.com/FrancescBars/Magma-functions-on-Quotient-Modular-Curves
 FpnPoints := function(N,d,p,n)
 TN := [* d, 1 *]; // List the elements of the subgroup of involutions
 t:=#TN; //Order of the subgroup of involutions
