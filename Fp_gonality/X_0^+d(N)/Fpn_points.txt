@@ -1,0 +1,21 @@
+load "funcions.m";
+
+// This function computes the number of F_{p^n}-points on the curve X_0^{+d}(N)
+// Some of the code was taken from an example at Francesc Bars's Github repository https://github.com/FrancescBars/Magma-functions-on-Quotient-Modular-Curves/blob/main
+FpnPoints := function(N,d,p,n)
+TN := [* d, 1 *]; // List the elements of the subgroup of involutions
+t:=#TN; //Order of the subgroup of involutions
+prec := 50; // Number of coefficients of the q-expansion
+HH := JacobianDecompositionQuotientX0NWN(N, TN, prec, t);
+print HH[1]; // Should return 11111111111111 if such Magma function JacobianDecompositionQuotientX0NWN compute the exact Jacobian decomposition (if one factor appears n times, appears n times in Jacobian decomposition)
+// If returns 0 then each factor (i.e. each abelian variety attached to a modular form listed in HH[2]) appears in the Jacobian decomposition BUT if one factors appears n times in Jacob.decom, here could appear m times (in the list HH[2]) with m ge n.
+//For N square free as our example should appear 11111111111 and compute the programme directly the Jacobian decomposition
+p:=3;// A prime number not dividing the level N
+FpnpointsQuotientCurve:=FpnpointsforQuotientcurveX0NWN(N,p,HH[2],HH[3],n);
+return FpnpointsQuotientCurve[n]; //List the number of F_{p^n}-points for the modular curve X0(N)/TN IF HH[1]= 11111111111111
+end function;
+
+for curve in {[140,5,3,2],[165,3,2,2],[195,13,2,2],[200,25,3,2],[208,13,5,2],[212,53,3,1],[220,55,3,2],[224,7,3,2],[225,25,2,2],[226,2,3,2],[237,3,2,2],[242,2,3,2],[242,121,3,2],[254,127,3,2],[259,7,2,2],[261,29,2,2],[268,4,3,2],[274,137,3,2],[275,11,3,2],[278,139,3,2],[288,9,5,2],[297,11,2,2],[298,149,3,2],[301,7,2,2],[302,151,3,2],[323,19,2,2],[325,25,2,2],[355,71,3,2]} do
+  curve;
+  FpnPoints(curve[1],curve[2],curve[3],curve[4]);
+end for;
