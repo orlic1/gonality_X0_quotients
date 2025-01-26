@@ -4,7 +4,7 @@ Additional README files have been put into subfolders to better explain the code
 
 ## Contents
 
-- new_models.m and quotient_model.m contain auxiliary functions. The most important one there is quotient_model, which gives models for Atkin-Lehner quotients of $X_0(N)$.
+- new_models.m and quotient_model.m contain auxiliary functions. The most important one there is quotient_model, which gives models for Atkin-Lehner quotients of $X_0(N)$. The author of these two files is Philippe Michaud-Jacobs.
 
 ### Example
 We compute a model of a quotient curve $X_0^*(144)$.
